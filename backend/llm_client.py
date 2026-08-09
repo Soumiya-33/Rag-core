@@ -1,0 +1,24 @@
+from groq import Groq
+from config import GROQ_API_KEY
+
+client = Groq(api_key =GROQ_API_KEY)
+
+MODEL_NAME ="llama-3.1-8b-instant"
+
+def ask_llm(prompt: str , temperature: float =0.2, max_tokens: int = 500) -> str:
+    try:
+        response = client.chat.completions.create(
+            model =MODEL_NAME,
+            messages=[
+                {"role": "user", "content": prompt}
+
+            ],
+            temperature = temperature,
+            max_tokens = max_tokens,
+
+        )
+        return response.choices[0].message.content
+
+    except Exception as e:
+
+        raise RuntimeError(f"Groq API call failed: {e}")
