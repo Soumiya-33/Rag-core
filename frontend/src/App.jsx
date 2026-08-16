@@ -6,7 +6,7 @@ import './App.css';
 // Flip this to false once your teammate's /query endpoint is actually running.
 // Keeping it as a flag (instead of deleting code) means you can switch back
 // instantly if the backend goes down again while you're still testing.
-const USE_FAKE_DATA = true;
+const USE_FAKE_DATA = false;
 
 const FAKE_RESPONSE = {
   answer:
