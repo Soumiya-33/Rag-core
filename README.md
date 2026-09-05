@@ -1,4 +1,4 @@
-# Rag-core
+# Rag-core (learning based project)
 
 RAG built from first principles — retrieval, embeddings, and evaluation, understood not just used.
 
