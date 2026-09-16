@@ -3,7 +3,7 @@ from config import GROQ_API_KEY
 
 client = Groq(api_key =GROQ_API_KEY)
 
-MODEL_NAME ="llama-3.1-8b-instant"
+MODEL_NAME ="openai/gpt-oss-20b"
 
 def ask_llm(prompt: str , temperature: float =0.2, max_tokens: int = 500) -> str:
     try:
