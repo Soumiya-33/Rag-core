@@ -22,3 +22,9 @@ def retrieve(query: str, chunks_data: list, top_k: int = 5) -> list:
         })
         
     return formatted_results
+
+
+def hybrid_retrieve(query: str, chunks_data: list, top_k: int = 5, k: int = 60) -> list:
+    """Convenience export for hybrid retrieval with Reciprocal Rank Fusion."""
+    from retrieval.test_retrieval import hybrid_retrieve as _hybrid_retrieve
+    return _hybrid_retrieve(query=query, chunks_data=chunks_data, top_k=top_k, k=k, model=model)
