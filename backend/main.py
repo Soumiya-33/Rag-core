@@ -20,10 +20,8 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
-
-    
 )
-EMBEDDINGS_PATH =Path(__file__).parent.parent /"embeddings.json"
+EMBEDDINGS_PATH =Path(__file__).parent.parent /"retrieval"/embeddings.json"
 
 with open(EMBEDDINGS_PATH, "r", encoding="utf-8") as f:
     EMBEDDINGS =json.load(f)
