@@ -2,6 +2,16 @@
 
 RAG built from first principles — retrieval, embeddings, and evaluation, understood not just used.
 
+## Live Demo
+
+The deployed version of RAG-Core is available here:
+
+**Frontend:** https://rag-core-blush.vercel.app
+
+**Backend API:** https://rag-core-1.onrender.com
+
+**API Documentation:** https://rag-core-1.onrender.com/docs
+
 ## What is this?
 
 A Retrieval-Augmented Generation (RAG) system that answers questions from a set of documents. Instead of just wiring together existing libraries, we build the core retrieval logic (chunking, embeddings, similarity search) from scratch first — then swap in production tools once we understand what they're actually doing.
